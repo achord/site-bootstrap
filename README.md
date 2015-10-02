@@ -1,2 +1,2 @@
-# Craft-Bootstrap
-CraftCMS, Gulp, Sass, Coffee, bootstraper for new sites.
+# Site Bootstrap
+CraftCMS Centric, Gulp, Sass, Coffee, bootstraper for new sites.
