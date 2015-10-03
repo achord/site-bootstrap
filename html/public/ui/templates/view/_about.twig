@@ -1,0 +1,20 @@
+{% extends "layout/_layout" %}
+
+{% set title = "About" %}
+{% set metaDescription = entry.metaDescription %}
+{% set metaKeywords = entry.metaKeywords %}
+
+{% block content %}
+<main class="Content">
+	<div class="Content__images">
+		{% if entry.images[0] is defined %}
+		<a href="http://www.fearlessphotographers.com/photographers.cfm?photogID=5722&natalie-mancuso" target="_blank"><img src="{{ entry.images[0].getUrl('gallery') }}" alt=""></a>
+		{% endif %}
+	</div>
+	<div class="Content__post">
+		<div class="Content__post-content">
+			{{ entry.body }}
+		</div>
+	</div>
+</main>
+{% endblock %}

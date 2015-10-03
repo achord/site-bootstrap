@@ -4,22 +4,19 @@ var loader;
 
 loader = require('./modules/loader');
 
+loader.init();
+
 
 
 },{"./modules/loader":2}],2:[function(require,module,exports){
 'use strict';
 var Loader;
 
-Loader = (function() {
-  function Loader() {}
-
-  Loader.prototype.init = (function() {
+Loader = {
+  init: function() {
     return console.log('Bootstrap Start');
-  })();
-
-  return Loader;
-
-})();
+  }
+};
 
 module.exports = Loader;
 

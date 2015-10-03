@@ -1,0 +1,13 @@
+{% extends "layout/_layout" %}
+
+{% set title = craft.request.getFirstSegment() | capitalize %}
+
+{% block content %}
+<div class="Gallery">
+	<div class="Gallery__images">
+	{% for image in entry.images %}
+	<img src="{{ image.getUrl('gallery') }}" alt="">
+	{% endfor %}
+	</div>
+</div>
+{% endblock %}

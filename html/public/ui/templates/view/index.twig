@@ -1,0 +1,11 @@
+{% extends "layout/_layout" %}
+
+{% set metaDescription = entry.metaDescription %}
+{% set metaKeywords = entry.metaKeywords %}
+
+{% block content %}
+<div class="Gallery">
+	{% set image = entry.images.limit(1).order('RAND()') %}
+	<img src="{{ image[0].getUrl('fullScreen') }}" alt="" class="Gallery__full">
+</div>
+{% endblock %}

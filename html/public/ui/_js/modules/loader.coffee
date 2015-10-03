@@ -4,8 +4,8 @@
 #     console.log 'Bootstrap Init'
 #     alert 'test'
 
-class Loader
-    init: do ->
+Loader =
+    init: ->
         console.log 'Bootstrap Start'
 
 module.exports = Loader
