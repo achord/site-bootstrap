@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+/* line 83, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 105, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 108, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 112, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 116, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 122, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles!
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+/* line 133, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+ins {
+  text-decoration: none; }
+
+/* line 136, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 140, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+/* line 3, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  box-sizing: border-box; }
+
+/* line 9, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+html,
+body {
+  overflow-y: scroll;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  background: #fff; }
+
+/* line 23, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+body {
+  font-size: 1.8rem; }
+
+/* line 27, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 32, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 35, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+.vertical-align {
+  display: table-cell;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 5, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+body {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 25px; }
+
+/* line 12, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 105px;
+  line-height: 125px; }
+
+/* line 19, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 58px;
+  line-height: 75px; }
+
+/* line 26, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 32px;
+  line-height: 50px; }
+
+/* line 33, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+h4 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 25px; }
+
+/* line 45, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+/* Sanitation */
+/* line 51, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+hr {
+  margin: -1px 0;
+  border: 1px solid; }
+
+/* line 59, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/* line 67, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+b,
+strong,
+em,
+small,
+code {
+  line-height: 1; }
+
+/* line 71, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+sup,
+sub {
+  position: relative;
+  top: -.4em;
+  vertical-align: baseline; }
+
+/* line 77, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+sub {
+  top: .4em; }
