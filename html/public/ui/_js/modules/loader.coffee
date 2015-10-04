@@ -6,7 +6,7 @@
 
 Loader =
     init: ->
-        console.log 'Bootstrap Start'
+        console.log 'Bootstrap Start!'
 
 module.exports = Loader
 

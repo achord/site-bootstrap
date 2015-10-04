@@ -14,7 +14,7 @@ var Loader;
 
 Loader = {
   init: function() {
-    return console.log('Bootstrap Start');
+    return console.log('Bootstrap Start!');
   }
 };
 

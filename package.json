@@ -22,6 +22,8 @@
     "gulp-coffee": "latest",
     "gulp-concat": "latest",
     "gulp-minify-css": "1.2.1",
+    "gulp-plumber-notifier": "0.0.2",
+    "gulp-sass": "latest",
     "gulp-uglify": "1.4.1",
     "jquery": "latest"
   }

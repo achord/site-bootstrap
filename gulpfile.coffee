@@ -6,6 +6,7 @@ coffee       = require 'gulp-coffee'
 concat       = require 'gulp-concat'
 gulp         = require 'gulp'
 minify       = require 'gulp-minify-css'
+notify       = require 'gulp-plumber-notifier'
 sass         = require 'gulp-sass'
 sync         = require('browser-sync').create()
 uglify       = require 'gulp-uglify'
@@ -32,8 +33,8 @@ errorLog = (error) ->
 
 gulp.task 'coffee', ->
     gulp.src coffeeSources, read: false
+        .pipe notify()
         .pipe browserify({transform: ['coffeeify'],extensions: ['.coffee']})
-        .on 'error', errorLog
         .pipe concat 'main.js'
         .pipe gulp.dest jsPublic
         .pipe sync.reload stream:true
@@ -42,8 +43,7 @@ gulp.task 'coffee', ->
 gulp.task 'coffeeBuild', ->
     gulp.src coffeeSources, read: false
         .pipe browserify({transform: ['coffeeify'],extensions: ['.coffee']})
-        .on 'error', errorLog
-        .pipe uglify()
+        .pipe uglify({mangle:true})
         .pipe concat 'main.js'
         .pipe gulp.dest jsPublic
         .pipe sync.reload stream:true
@@ -51,10 +51,9 @@ gulp.task 'coffeeBuild', ->
 
 gulp.task 'styles', ->
     gulp.src styleSources
+        .pipe notify()
         .pipe sass({errLogToConsole: true, sourceComments : 'normal'})
-        .on 'error', errorLog
         .pipe autoprefixer()
-        .on 'error', errorLog
         .pipe gulp.dest cssPublic
         .pipe sync.reload stream:true
     return
@@ -62,9 +61,7 @@ gulp.task 'styles', ->
 gulp.task 'stylesBuild', ->
     gulp.src styleSources
         .pipe sass()
-        .on 'error', errorLog
         .pipe autoprefixer()
-        .on 'error', errorLog
         .pipe minify()
         .pipe gulp.dest cssPublic
         .pipe sync.reload stream:true
@@ -85,13 +82,7 @@ gulp.task 'watch', ->
     gulp.watch templateSources, ['html']
     return
 
-# gulp = require('./gulp')(
-#     'compass',
-#     'browserify',
-#     'watch',
-#     'browser-sync'
-# )
 gulp.task 'default', ['coffee', 'styles', 'html', 'sync', 'watch']
-gulp.task 'build', ['coffeeBuild', 'stylesBuild', 'html', 'sync', 'watch']
+gulp.task 'build', ['coffeeBuild', 'stylesBuild']
 
 # EOF
