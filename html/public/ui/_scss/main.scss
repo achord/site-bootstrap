@@ -1,10 +1,11 @@
 @charset 'UTF-8';
 
 // Base & Reset
-@import './components/_reset.scss';
-@import './components/_base.scss';
+@import './components/_reset';
+@import './components/_base';
+@import './components/_bemErrorChecking';
 
 // Modules
-@import './modules/_Type.scss';
+@import './modules/_Type';
 
 //EOF

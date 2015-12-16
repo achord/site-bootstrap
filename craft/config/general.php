@@ -17,7 +17,7 @@ return array(
         'pageTrigger' => 'page/',
         'errorTemplatePrefix' => "_errors/",
         'rotateImagesOnUploadByExifData' => false,
-		'cpTrigger' => 'manager',
+		    'cpTrigger' => 'manager',
         'errorTemplatePrefix' => 'view/',
         'omitScriptNameInUrls' => true,
         'generateTransformsBeforePageLoad' => true,
@@ -27,7 +27,7 @@ return array(
 		'siteUrl' => 'http://bootstrap.dev',
         'devMode' => true,
 	),
-	'bootstrap.com' => array(
+	'.com' => array(
 		'siteUrl' => 'http://bootstrap.com/',
 		'devMode' => false,
 	),

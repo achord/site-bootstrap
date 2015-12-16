@@ -2,7 +2,7 @@
    v2.0b1 | 201101
    NOTE: WORK IN PROGRESS
    USE WITH CAUTION AND TEST WITH ABANDON */
-/* line 83, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 85, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 html,
 body,
 div,
@@ -90,7 +90,7 @@ video {
   outline: 0; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 105, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 107, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 article,
 aside,
 details,
@@ -104,21 +104,21 @@ nav,
 section {
   display: block; }
 
-/* line 108, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 110, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 body {
   line-height: 1; }
 
-/* line 112, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 114, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 ol,
 ul {
   list-style: none; }
 
-/* line 116, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 118, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 blockquote,
 q {
   quotes: none; }
 
-/* line 122, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 124, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -131,29 +131,30 @@ q:after {
 	outline: ?????;
 } */
 /* remember to highlight inserts somehow! */
-/* line 133, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 135, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 ins {
   text-decoration: none; }
 
-/* line 136, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 138, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 del {
   text-decoration: line-through; }
 
-/* line 140, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 142, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-/* line 3, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 5, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
   box-sizing: border-box; }
 
-/* line 9, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 11, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 html,
 body {
+  overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
   min-width: 100%;
@@ -164,23 +165,40 @@ body {
   font-size: 62.5%;
   background: #fff; }
 
-/* line 23, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 26, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
   font-size: 1.8rem; }
 
-/* line 27, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 34, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+#Content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+/* line 38, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 32, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 43, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 35, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 46, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 .vertical-align {
   display: table-cell;
   display: -webkit-box;
@@ -209,6 +227,45 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+/* line 60, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+.hidden {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  overflow: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 70, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+.skip {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  overflow: hidden;
+  width: 1px;
+  height: 1px; }
+
+/* line 81, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto; }
+
+/* line 12, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_bemErrorChecking.scss */
+[class*='--']:not([class*=' ']) {
+  position: relative;
+  outline: 1px solid red; }
+  /* line 16, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_bemErrorChecking.scss */
+  [class*='--']:not([class*=' ']):after {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: "ERROR: Cannot have a Modifier (i.e. `." attr(class) "`) without a Block.";
+    font-family: monospace;
+    white-space: nowrap;
+    color: red;
+    background-color: white; }
 
 /* line 5, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 body {

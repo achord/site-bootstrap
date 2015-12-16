@@ -4,13 +4,13 @@
 #     console.log 'Bootstrap Init'
 #     alert 'test'
 
+# do ->
+#     console.log 'Bootstrap Start'
+
 Loader =
-    init: ->
+    init: do->
         console.log 'Bootstrap Start!'
 
 module.exports = Loader
-
-# do ->
-#     console.log 'Bootstrap Start'
 
 #EOF
