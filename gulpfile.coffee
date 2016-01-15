@@ -5,7 +5,7 @@ browserify   = require 'gulp-browserify'
 coffee       = require 'gulp-coffee'
 concat       = require 'gulp-concat'
 gulp         = require 'gulp'
-minify       = require 'gulp-minify-css'
+cssnano      = require 'gulp-cssnano'
 notify       = require 'gulp-plumber-notifier'
 sass         = require 'gulp-sass'
 sync         = require('browser-sync').create()
@@ -62,7 +62,7 @@ gulp.task 'stylesBuild', ->
     gulp.src styleSources
         .pipe sass()
         .pipe autoprefixer()
-        .pipe minify()
+        .pipe cssnano()
         .pipe gulp.dest cssPublic
         .pipe sync.reload stream:true
     return
@@ -82,7 +82,7 @@ gulp.task 'watch', ->
     gulp.watch templateSources, ['html']
     return
 
-gulp.task 'default', ['coffee', 'styles', 'html', 'sync', 'watch']
+gulp.task 'default', ['coffee', 'styles', 'html', 'watch', 'sync']
 gulp.task 'build', ['coffeeBuild', 'stylesBuild']
 
 # EOF
