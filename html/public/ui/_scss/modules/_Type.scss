@@ -2,40 +2,71 @@
 
 // Typographic styles and vertical rhythm pulled from http://www.gridlover.net/app/
 
-body {
-  max-width: 760px;
+
+// These values are the minimum and maximum viewport sizes to apply the font scaling
+$min_width: 600;
+$max_width: 1000;
+// These values represent the range of fon-tsize to apply
+// These values effect the base font-size, headings and other elements will scale proportionally
+$min_font: 10;
+$max_font: 20;
+
+:root { font-size: #{$min_font}px; }
+// This part is a little bit ugly, I will explain what is going on in a blog post soon.
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  :root {
+    font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
+  }
+}
+@media (min-width: #{$max_width}px){
+   :root {
+     font-size: #{$max_font}px;
+   }
+}
+
+// Scales by 1px for every 100px from 600px onwards
+// @media (min-width: 600px) {
+//     font-size: calc(112.5% + 4 * (100vw - 600px) / 400);
+// }
+
+// Sets font-size to 22px after a viewport of 1000px
+// @media (min-width: 1000px) {
+//     font-size: calc(137.5%);
+// }
+
+body {;
   margin: 0 auto;
 
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 18rem;
+  line-height: 25rem;
 }
 h1 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 25rem;
 
-  font-size: 105px;
-  line-height: 125px;
+  font-size: 105rem;
+  line-height: 125rem;
 }
 h2 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 25rem;
 
-  font-size: 58px;
-  line-height: 75px;
+  font-size: 58rem;
+  line-height: 75rem;
 }
 h3 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 25rem;
 
-  font-size: 32px;
-  line-height: 50px;
+  font-size: 32rem;
+  line-height: 50rem;
 }
 h4 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 25rem;
 
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 18rem;
+  line-height: 25rem;
 }
 p,
 ul,

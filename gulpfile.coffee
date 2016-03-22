@@ -22,7 +22,7 @@ templateSources = [
     'html/**/*.html'
 ]
 
-siteURL     = 'http://bootstrap.dev'
+siteURL      = 'http://bootstrap.dev'
 jsPublic     = 'html/public/ui/js'
 cssPublic    = 'html/public/ui/css'
 vendorPublic = 'html/public/ui/js/vendor'
