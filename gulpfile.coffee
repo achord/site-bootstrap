@@ -19,7 +19,8 @@ styleSources = [
     'html/public/ui/_scss/main.scss'
 ]
 templateSources = [
-    'html/**/*.html'
+    'html/**/*.html',
+    'html/**/*.twig'
 ]
 
 siteURL      = 'http://bootstrap.dev'
