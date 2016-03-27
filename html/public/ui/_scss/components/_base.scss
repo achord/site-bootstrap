@@ -24,13 +24,17 @@ body {
     background: #fff;
 
     -webkit-overflow-scrolling: touch;
+    color:$secondary;
 }
 body {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 
     font-size: 1.8rem;
+}
+.Content{
+    flex-grow:1;
 }
 //No Image larger than full width
 img {
@@ -39,7 +43,62 @@ img {
     height: auto;
 }
 a {
+    color: $primary;
+
     touch-action: manipulation;
+    transition: .2s;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    text-decoration: none;
+
+    box-shadow: inset 0 -2px 0 0 #fff, inset 0 -4px 0 0 currentColor;
+    text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff, 4px 0 0 #fff, -4px 0 0 #fff, 6px 0 0 #fff, -6px 0 0 #fff;
+
+    text-decoration-skip: ink;
+}
+
+a:visited {
+    color: fade-out($primary, .5)
+}
+a:hover,
+a:active,
+a:focus {
+    opacity: .5;
+    // text-shadow: none;
+    // box-shadow: none;
+}
+
+.skip {
+    position: absolute;
+    z-index: -999;
+    top: auto;
+    left: -999px;
+
+    overflow: hidden;
+
+    width: 1px;
+    height: 1px;
+}
+.skip:focus,
+.skip:active {
+    z-index: 999;
+    top: auto;
+    left: auto;
+
+    overflow: auto;
+
+    width: 30%;
+    height: auto;
+
+    text-align: center;
+}
+@media (max-width:768px) {
+    a:link,
+    a:visited {
+        box-shadow: inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 currentColor;
+    }
 }
 
 // EOF
