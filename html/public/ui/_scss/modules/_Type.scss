@@ -4,12 +4,12 @@
 
 
 // These values are the minimum and maximum viewport sizes to apply the font scaling
-$min_width: 600;
-$max_width: 1000;
+$min_width: 768;
+$max_width: 1800;
 // These values represent the range of fon-tsize to apply
 // These values effect the base font-size, headings and other elements will scale proportionally
-$min_font: 10;
-$max_font: 20;
+$min_font: 12;
+$max_font: 18;
 
 :root { font-size: #{$min_font}px; }
 // This part is a little bit ugly, I will explain what is going on in a blog post soon.
@@ -34,39 +34,66 @@ $max_font: 20;
 //     font-size: calc(137.5%);
 // }
 
-body {;
+body {
+  max-width: 760px;
   margin: 0 auto;
+  padding: 1.6875rem;
 
-  font-size: 18rem;
-  line-height: 25rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6875rem;
 }
 h1 {
-  margin-top: 0;
-  margin-bottom: 25rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 
-  font-size: 105rem;
-  line-height: 125rem;
+  font-family: inherit;
+  font-size: 4.75rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 5.0625rem;
 }
 h2 {
-  margin-top: 0;
-  margin-bottom: 25rem;
+  margin-top: 0rem;
+  margin-bottom: 1.6875rem;
 
-  font-size: 58rem;
-  line-height: 75rem;
+  font-family: inherit;
+  font-size: 2.9375rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 3.375rem;
 }
 h3 {
-  margin-top: 0;
-  margin-bottom: 25rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 
-  font-size: 32rem;
-  line-height: 50rem;
+  font-family: inherit;
+  font-size: 1.8125rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 3.375rem;
 }
 h4 {
-  margin-top: 0;
-  margin-bottom: 25rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 
-  font-size: 18rem;
-  line-height: 25rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 1.6875rem;
+}
+h5 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6875rem;
 }
 p,
 ul,
@@ -74,15 +101,8 @@ ol,
 pre,
 table,
 blockquote {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-/* Sanitation */
-hr {
-  margin: -1px 0;
-
-  border: 1px solid;
+  margin-top: 0rem;
+  margin-bottom: 1.6875rem;
 }
 ul ul,
 ol ol,
@@ -91,6 +111,11 @@ ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+hr {
+  margin: -1px 0;
+
+  border: 1px solid;
+}
 b,
 strong,
 em,
@@ -98,15 +123,16 @@ small,
 code {
   line-height: 1;
 }
-sup,
-sub {
+sup {
   position: relative;
-  top: -.4em;
+  top: -.5em;
 
+  line-height: 0;
   vertical-align: baseline;
 }
 sub {
-  top: .4em;
+  bottom: -.25em;
 }
+
 
 // EOF

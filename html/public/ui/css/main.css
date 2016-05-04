@@ -2,7 +2,7 @@
    v2.0b1 | 201101
    NOTE: WORK IN PROGRESS
    USE WITH CAUTION AND TEST WITH ABANDON */
-/* line 85, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 8, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 html,
 body,
 div,
@@ -90,7 +90,7 @@ video {
   outline: 0; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 107, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 97, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 article,
 aside,
 details,
@@ -108,17 +108,17 @@ section {
 body {
   line-height: 1; }
 
-/* line 114, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 113, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 ol,
 ul {
   list-style: none; }
 
-/* line 118, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 117, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 blockquote,
 q {
   quotes: none; }
 
-/* line 124, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
+/* line 121, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -144,14 +144,14 @@ table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-/* line 5, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 3, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
   box-sizing: border-box; }
 
-/* line 11, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 10, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 html,
 body {
   overflow-x: hidden;
@@ -164,70 +164,139 @@ body {
   padding: 0;
   font-size: 62.5%;
   background: #fff;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  color: #333; }
 
-/* line 28, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 29, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   min-height: 100vh;
   font-size: 1.8rem; }
 
-/* line 37, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+/* line 35, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 42, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+/* line 40, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+a {
+  color: #777;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-transition: .2s;
+  transition: .2s; }
 
-/* line 45, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
-.vertical-align {
-  display: table-cell;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+/* line 46, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+a:link,
+a:visited {
+  text-decoration: none;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 0 #fff, inset 0 -4px 0 0 currentColor;
+  text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff, 3px 0 0 #fff, -3px 0 0 #fff, 4px 0 0 #fff, -4px 0 0 #fff;
+  text-decoration-skip: ink; }
 
-/* line 50, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
-.hidden {
-  position: absolute;
-  top: auto;
-  left: -10000px;
-  overflow: hidden;
-  width: 0;
-  height: 0; }
+/* line 57, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+a:visited {
+  color: rgba(119, 119, 119, 0.5); }
 
 /* line 60, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+a:hover,
+a:active,
+a:focus {
+  opacity: .5; }
+
+/* line 68, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 .skip {
   position: absolute;
+  z-index: -999;
   top: auto;
-  left: -10000px;
+  left: -999px;
   overflow: hidden;
   width: 1px;
   height: 1px; }
 
-/* line 70, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto; }
+/* line 79, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+.skip:focus,
+.skip:active {
+  z-index: 999;
+  top: auto;
+  left: auto;
+  overflow: auto;
+  width: 30%;
+  height: auto;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  /* line 93, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
+  a:link,
+  a:visited {
+    box-shadow: inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 currentColor; } }
+
+/* line 3, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
+button {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-size: inherit;
+  font-weight: 100;
+  color: #777;
+  border: none;
+  border-radius: 0;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+  /* line 23, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
+  button:hover {
+    opacity: .8; }
+
+/* line 27, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
+input,
+button,
+textarea,
+select {
+  overflow: visible;
+  height: 2.5rem;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  vertical-align: bottom;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-fill-color: #fff; }
+
+/* line 49, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
+input,
+textarea,
+select {
+  border: 1px solid currentColor; }
+
+/* line 54, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background: #fff !important;
+  box-shadow: 0 0 0 1000px #fff inset;
+  text-fill-color: currentColor;
+  -webkit-text-fill-color: currentColor; }
+
+/* line 64, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
+button::-moz-focus-inner,
+input:-moz-focus-inner,
+select:-moz-focus-inner,
+*:focus-inner {
+  padding: 0;
+  border: none; }
 
 /* line 12, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_bemErrorChecking.scss */
 [class*='--']:not([class*=' ']) {
@@ -244,58 +313,92 @@ img {
     color: red;
     background-color: white; }
 
-/* line 5, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 14, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+:root {
+  font-size: 12px; }
+
+@media (min-width: 768px) and (max-width: 1800px) {
+  /* line 17, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+  :root {
+    font-size: calc( 12px + (18 - 12) * ( (100vw - 768px) / ( 1800 - 768) )); } }
+
+@media (min-width: 1800px) {
+  /* line 22, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+  :root {
+    font-size: 18px; } }
+
+/* line 37, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 body {
   max-width: 760px;
   margin: 0 auto;
-  font-size: 18px;
-  line-height: 25px; }
+  padding: 1.6875rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6875rem; }
 
-/* line 12, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 48, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h1 {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 105px;
-  line-height: 125px; }
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-family: inherit;
+  font-size: 4.75rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 5.0625rem; }
 
-/* line 19, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 58, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 58px;
-  line-height: 75px; }
+  margin-top: 0rem;
+  margin-bottom: 1.6875rem;
+  font-family: inherit;
+  font-size: 2.9375rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 3.375rem; }
 
-/* line 26, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 68, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h3 {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 32px;
-  line-height: 50px; }
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-family: inherit;
+  font-size: 1.8125rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 3.375rem; }
 
-/* line 33, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 78, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h4 {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 18px;
-  line-height: 25px; }
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: inherit;
+  line-height: 1.6875rem; }
 
-/* line 45, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 88, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+h5 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6875rem; }
+
+/* line 98, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 p,
 ul,
 ol,
 pre,
 table,
 blockquote {
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-top: 0rem;
+  margin-bottom: 1.6875rem; }
 
-/* Sanitation */
-/* line 51, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
-hr {
-  margin: -1px 0;
-  border: 1px solid; }
-
-/* line 59, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 107, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 ul ul,
 ol ol,
 ul ol,
@@ -303,7 +406,12 @@ ol ul {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 67, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 114, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+hr {
+  margin: -1px 0;
+  border: 1px solid; }
+
+/* line 119, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 b,
 strong,
 em,
@@ -311,13 +419,13 @@ small,
 code {
   line-height: 1; }
 
-/* line 71, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
-sup,
-sub {
+/* line 126, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+sup {
   position: relative;
-  top: -.4em;
+  top: -.5em;
+  line-height: 0;
   vertical-align: baseline; }
 
-/* line 77, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 133, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 sub {
-  top: .4em; }
+  bottom: -.25em; }
