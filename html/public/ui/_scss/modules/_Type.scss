@@ -8,7 +8,7 @@ $min_width: 768;
 $max_width: 1800;
 // These values represent the range of fon-tsize to apply
 // These values effect the base font-size, headings and other elements will scale proportionally
-$min_font: 12;
+$min_font: 14;
 $max_font: 18;
 
 :root { font-size: #{$min_font}px; }
@@ -85,15 +85,20 @@ h4 {
   font-style: inherit;
   line-height: 1.6875rem;
 }
-h5 {
+h5,h6 {
   margin-top: 0rem;
   margin-bottom: 0rem;
 
   font-family: inherit;
   font-size: 1.125rem;
   font-weight: 400;
-  font-style: italic;
   line-height: 1.6875rem;
+}
+h6{
+  font-style: italic;
+}
+h1,h2,h3,h4,h5{
+  font-weight: 300;
 }
 p,
 ul,
