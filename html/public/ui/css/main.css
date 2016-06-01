@@ -190,9 +190,9 @@ a:visited {
   text-decoration: none;
   color: #777;
   color: transparent;
-  text-shadow: 0 0 #777, 0.06em 0 0 #fff, 0 0, -0.06em 0 0 #fff, 0.12em 0 0 #fff, 0 0, -0.12em 0 0 #fff, 0 0.04em 0 #fff;
-  background: -webkit-linear-gradient(#777, #777) center 0.93em no-repeat;
-  background: linear-gradient(#777, #777) center 0.93em no-repeat;
+  text-shadow: 0 0 #777, 0.04em 0.04em 0 #fff, 0 0, -0.04em 0.04em 0 #fff, 0.06em 0.04em 0 #fff, 0 0, -0.06em 0.04em 0 #fff, 0.08em 0.04em 0 #fff, 0 0, -0.08em 0.04em 0 #fff;
+  background: -webkit-linear-gradient(#777, #777) center 0.85em no-repeat;
+  background: linear-gradient(#777, #777) center 0.85em no-repeat;
   background-size: 98% 1px;
   -webkit-transition: .2s ease;
   transition: .2s ease; }
@@ -205,8 +205,8 @@ a:visited {
     /* line 47, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
     a:link,
     a:visited {
-      background: -webkit-linear-gradient(#777, #777) center 0.945em no-repeat;
-      background: linear-gradient(#777, #777) center 0.945em no-repeat;
+      background: -webkit-linear-gradient(#777, #777) center 0.88em no-repeat;
+      background: linear-gradient(#777, #777) center 0.88em no-repeat;
       background-size: 98% 1px; } }
 
 /* line 110, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
@@ -341,7 +341,7 @@ body {
   max-width: 760px;
   margin: 0 auto;
   padding: 1.6875rem;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Gotham', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
@@ -401,8 +401,8 @@ h6 {
   font-style: italic; }
 
 /* line 100, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
-h1, h2, h3, h4, h5 {
-  font-weight: 300; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
 
 /* line 103, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 p,

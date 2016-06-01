@@ -93,16 +93,16 @@ a:visited {
   color: $primary;
   color: transparent;
   // Needs to be tweaked for different fonts
-  text-shadow: 0 0 $primary, .06em 0 0 #fff, 0 0, -.06em 0 0 #fff, .12em 0 0 #fff, 0 0, -.12em 0 0 #fff, 0 .04em 0 #fff;
+  text-shadow: 0 0 $primary, .04em .04em 0 #fff, 0 0, -.04em .04em 0 #fff, .06em .04em 0 #fff, 0 0, -.06em .04em 0 #fff, .08em .04em 0 #fff, 0 0, -.08em .04em 0 #fff;
   // Needs to be tweaked for different fonts
-  background: linear-gradient($primary, $primary) center .93em no-repeat;
+  background: linear-gradient($primary, $primary) center .85em no-repeat;
   background-size: 98% 1px;
   transition: .2s ease;
   @media (max-width:1024px){
     background-size: 98% 1px;
   }
   @media (max-width:768px){
-    background: linear-gradient($primary, $primary) center .945em no-repeat;
+    background: linear-gradient($primary, $primary) center .88em no-repeat;
     background-size: 98% 1px;
   }
 }

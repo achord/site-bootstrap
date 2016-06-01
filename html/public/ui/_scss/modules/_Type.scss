@@ -37,68 +37,63 @@ $max_font: 18;
 body {
   max-width: 760px;
   margin: 0 auto;
-  padding: 1.6875rem;
+  padding: .9375rem;
 
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-family: 'Gotham', Helvetica, Arial, sans-serif;
+  font-size: .625rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.6875rem;
+  line-height: .9375rem;
 }
 h1 {
   margin-top: 0rem;
   margin-bottom: 0rem;
 
   font-family: inherit;
-  font-size: 4.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 5.0625rem;
+  line-height: 1.875rem;
 }
 h2 {
   margin-top: 0rem;
-  margin-bottom: 1.6875rem;
+  margin-bottom: .9375rem;
 
   font-family: inherit;
-  font-size: 2.9375rem;
+  font-size: 1.125rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 3.375rem;
+  line-height: 1.875rem;
 }
 h3 {
   margin-top: 0rem;
   margin-bottom: 0rem;
 
   font-family: inherit;
-  font-size: 1.8125rem;
+  font-size: .8125rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 3.375rem;
+  line-height: .9375rem;
 }
 h4 {
   margin-top: 0rem;
   margin-bottom: 0rem;
 
   font-family: inherit;
-  font-size: 1.125rem;
+  font-size: .625rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 1.6875rem;
+  line-height: .9375rem;
 }
-h5,h6 {
+h5 {
   margin-top: 0rem;
   margin-bottom: 0rem;
 
   font-family: inherit;
-  font-size: 1.125rem;
+  font-size: .625rem;
   font-weight: 400;
-  line-height: 1.6875rem;
-}
-h6{
   font-style: italic;
-}
-h1,h2,h3,h4,h5{
-  font-weight: 300;
+  line-height: .9375rem;
 }
 p,
 ul,
@@ -107,7 +102,7 @@ pre,
 table,
 blockquote {
   margin-top: 0rem;
-  margin-bottom: 1.6875rem;
+  margin-bottom: .9375rem;
 }
 ul ul,
 ol ol,
