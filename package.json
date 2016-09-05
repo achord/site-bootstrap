@@ -1,30 +1,31 @@
 {
-    "name": "site-bootstrap",
-    "version": "1.0.0",
-    "description": "Site bootstrap for new projects",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/akukral/site-bootstrap.git"
-    },
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Allan Kukral",
-    "license": "MIT",
-    "devDependencies": {
-        "browser-sync": "latest",
-        "browserify": "latest",
-        "coffee-script": "latest",
-        "coffeeify": "latest",
-        "gulp": "latest",
-        "gulp-autoprefixer": "latest",
-        "gulp-coffee": "latest",
-        "gulp-concat": "latest",
-        "gulp-cssnano": "latest",
-        "gulp-plumber-notifier": "latest",
-        "gulp-sass": "latest",
-        "gulp-uglify": "latest",
-        "jquery": "latest"
-    }
+  "name": "site-bootstrap",
+  "version": "1.0.0",
+  "description": "Site bootstrap for new projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akukral/site-bootstrap.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Allan Kukral",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "browserify": "latest",
+    "coffee-script": "latest",
+    "coffeeify": "latest",
+    "devbridge-styleguide": "0.4.10",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-plumber-notifier": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "jquery": "latest"
+  }
 }

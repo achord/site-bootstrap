@@ -10,6 +10,7 @@ notify       = require 'gulp-plumber-notifier'
 sass         = require 'gulp-sass'
 sync         = require('browser-sync').create()
 uglify       = require 'gulp-uglify'
+styleguide   = require 'devbridge-styleguide'
 
 
 coffeeSources = [
@@ -76,6 +77,12 @@ gulp.task 'html', ->
 gulp.task 'sync', ->
     sync.init proxy: siteURL
     return
+
+gulp.task 'start-styleguide', ->
+    notify()
+    styleguide.startServer({styleguidePath:'html/styleguide'})
+    return
+
 
 gulp.task 'watch', ->
     gulp.watch 'html/**/*.coffee', ['coffee']

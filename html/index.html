@@ -67,21 +67,6 @@
   <noscript><link rel="stylesheet" href="/public/ui/css/main.css"></noscript>
 </head>
 <body class="">
-  <!--[if lt IE 8]>
-  <div class="unsupported-browser">
-    <strong>
-      You are using an outdated browser.
-    </strong>
-    <span>
-      Please <a class="upgrade-browser"
-      href="http://browsehappy.com/">
-      upgrade your browser</a> or <a  class="chrome-frame"
-      href="http://www.google.com/chromeframe/?redirect=true">activate Google
-      Chrome Frame</a> to improve your experience.
-    </span>
-  </div>
-  <![endif]-->
-
   <!-- Skip To Main Content -->
   <a href="#Content" class="skip">Skip to main content</a>
 
@@ -120,6 +105,18 @@
   <!-- TODO: ADD GOOGLE ANALYTICS -->
 
   <script src="/public/ui/js/main.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- Out of data browser notification -->
+  <script>
+    var $buoop = {c:2};
+    function $buo_f(){
+     var e = document.createElement("script");
+     e.src = "//browser-update.org/update.min.js";
+     document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
   <script src="http://ie.microsoft.com/testdrive/HTML5/CompatInspector/inspector.js"></script>
 </body>
 </html>

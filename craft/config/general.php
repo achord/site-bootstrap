@@ -17,7 +17,7 @@ return array(
         'pageTrigger' => 'page/',
         'errorTemplatePrefix' => "_errors/",
         'rotateImagesOnUploadByExifData' => false,
-		'cpTrigger' => 'manager',
+		    'cpTrigger' => 'manager',
         'errorTemplatePrefix' => 'view/',
         'omitScriptNameInUrls' => true,
         'generateTransformsBeforePageLoad' => true,
