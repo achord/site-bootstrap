@@ -340,71 +340,64 @@ select:-moz-focus-inner,
 body {
   max-width: 760px;
   margin: 0 auto;
-  padding: 1.6875rem;
+  padding: .9375rem;
   font-family: 'Gotham', Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: .625rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.6875rem; }
+  line-height: .9375rem; }
 
 /* line 48, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h1 {
   margin-top: 0rem;
   margin-bottom: 0rem;
   font-family: inherit;
-  font-size: 4.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 5.0625rem; }
+  line-height: 1.875rem; }
 
 /* line 58, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h2 {
   margin-top: 0rem;
-  margin-bottom: 1.6875rem;
+  margin-bottom: .9375rem;
   font-family: inherit;
-  font-size: 2.9375rem;
+  font-size: 1.125rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 3.375rem; }
+  line-height: 1.875rem; }
 
 /* line 68, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h3 {
   margin-top: 0rem;
   margin-bottom: 0rem;
   font-family: inherit;
-  font-size: 1.8125rem;
+  font-size: .8125rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 3.375rem; }
+  line-height: .9375rem; }
 
 /* line 78, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h4 {
   margin-top: 0rem;
   margin-bottom: 0rem;
   font-family: inherit;
-  font-size: 1.125rem;
+  font-size: .625rem;
   font-weight: 600;
   font-style: inherit;
-  line-height: 1.6875rem; }
+  line-height: .9375rem; }
 
 /* line 88, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
-h5, h6 {
+h5 {
   margin-top: 0rem;
   margin-bottom: 0rem;
   font-family: inherit;
-  font-size: 1.125rem;
+  font-size: .625rem;
   font-weight: 400;
-  line-height: 1.6875rem; }
+  font-style: italic;
+  line-height: .9375rem; }
 
-/* line 97, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
-h6 {
-  font-style: italic; }
-
-/* line 100, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
-
-/* line 103, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 98, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 p,
 ul,
 ol,
@@ -412,9 +405,9 @@ pre,
 table,
 blockquote {
   margin-top: 0rem;
-  margin-bottom: 1.6875rem; }
+  margin-bottom: .9375rem; }
 
-/* line 112, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 107, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 ul ul,
 ol ol,
 ul ol,
@@ -422,12 +415,12 @@ ol ul {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 119, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 114, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 hr {
   margin: -1px 0;
   border: 1px solid; }
 
-/* line 124, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 119, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 b,
 strong,
 em,
@@ -435,13 +428,13 @@ small,
 code {
   line-height: 1; }
 
-/* line 131, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 126, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 sup {
   position: relative;
   top: -.5em;
   line-height: 0;
   vertical-align: baseline; }
 
-/* line 138, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+/* line 133, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 sub {
   bottom: -.25em; }
