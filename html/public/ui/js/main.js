@@ -1,8 +1,13 @@
 'use strict';
 
-// alert('hello');
+// import sayName from "./modules/alert";
 
-var sayHi = function sayHi() {return (
-    alert('hello'));};
+var sayName = function sayName() {
+  var name = arguments.length <= 0 || arguments[0] === undefined ? 'allan' : arguments[0];
 
-// sayHi()
+  var greeting = 'hello ' + name;
+  alert(greeting);
+};
+
+sayName('allan');
+console.log('asdfds.asdfads');
