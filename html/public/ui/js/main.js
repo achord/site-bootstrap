@@ -48,16 +48,6 @@
 
 	var _alert = __webpack_require__(1);
 
-	// const sayName = (name='allan') => {
-	//   let greeting = `hello ${name}`
-	//   alert(greeting)
-	// }
-
-
-	(0, _alert.sayName)('allan');
-	(0, _alert.yellName)('allan');
-	// console.log('asd')
-
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
