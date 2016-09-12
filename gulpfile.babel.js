@@ -16,15 +16,15 @@ import notify from 'gulp-plumber-notifier';
 import sync from 'browser-sync';
 sync.create();
 
-const jsSources = ['html/public/ui/_js/main.js'];
-const styleSources = ['html/public/ui/_scss/main.scss'];
-const templateSources = ['html/**/*.html', 'html/**/*.twig'];
+const jsSources = ['./html/public/ui/_js/main.js'];
+const styleSources = ['./html/public/ui/_scss/main.scss'];
+const templateSources = ['./html/**/*.html', 'html/**/*.twig'];
 
 const siteURL = 'http://bootstrap.dev'; //MUST CHANGE THIS
-const jsPublic = 'html/public/ui/js';
-const cssPublic = 'html/public/ui/css';
+const jsPublic = './html/public/ui/js';
+const cssPublic = './html/public/ui/css';
 
-const rootPublic = 'html/';
+const rootPublic = './html/';
 
 gulp.task('javascript', () => {
   gulp.src(jsSources)
@@ -105,7 +105,9 @@ gulp.task('html', () => {
 
 gulp.task('sync', () => {
   sync.init({
-    proxy: siteURL,
+    server: {
+      baseDir: rootPublic
+    },
     injectChanges: true
   });
 });
