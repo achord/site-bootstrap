@@ -24,7 +24,7 @@
     "gulp-plumber-notifier": "latest",
     "gulp-postcss": "latest",
     "gulp-sass": "latest",
-    "gulp-webpack": "latest",
+    "webpack": "latest",
     "postcss-cssnext": "latest",
     "webpack-stream": "latest"
   }
