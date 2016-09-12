@@ -2,7 +2,6 @@
    v2.0b1 | 201101
    NOTE: WORK IN PROGRESS
    USE WITH CAUTION AND TEST WITH ABANDON */
-/* line 8, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 html,
 body,
 div,
@@ -90,7 +89,6 @@ video {
   outline: 0; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 97, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 article,
 aside,
 details,
@@ -104,21 +102,17 @@ nav,
 section {
   display: block; }
 
-/* line 110, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 body {
   line-height: 1; }
 
-/* line 113, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 ol,
 ul {
   list-style: none; }
 
-/* line 117, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 blockquote,
 q {
   quotes: none; }
 
-/* line 121, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -131,27 +125,22 @@ q:after {
 	outline: ?????;
 } */
 /* remember to highlight inserts somehow! */
-/* line 135, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 ins {
   text-decoration: none; }
 
-/* line 138, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 del {
   text-decoration: line-through; }
 
-/* line 142, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_reset.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-/* line 3, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
   box-sizing: border-box; }
 
-/* line 10, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 html,
 body {
   width: 100%;
@@ -163,20 +152,18 @@ body {
   font-size: 62.5%;
   background: #fff; }
 
-/* line 24, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
   min-height: 100vh;
+  font-size: 21.6px;
   font-size: 1.8rem;
   -webkit-overflow-scrolling: touch; }
 
-/* line 35, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 40, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 a {
   -webkit-transition: .2s;
   transition: .2s;
@@ -184,7 +171,6 @@ a {
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
 
-/* line 47, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 a:link,
 a:visited {
   text-decoration: none;
@@ -197,29 +183,24 @@ a:visited {
   -webkit-transition: .2s ease;
   transition: .2s ease; }
   @media (max-width: 1024px) {
-    /* line 47, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
     a:link,
     a:visited {
       background-size: 98% 1px; } }
   @media (max-width: 768px) {
-    /* line 47, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
     a:link,
     a:visited {
       background: -webkit-linear-gradient(#777, #777) center 0.88em no-repeat;
       background: linear-gradient(#777, #777) center 0.88em no-repeat;
       background-size: 98% 1px; } }
 
-/* line 110, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 a:visited {
   color: rgba(119, 119, 119, 0.5); }
 
-/* line 113, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 a:hover,
 a:active,
 a:focus {
   opacity: .5; }
 
-/* line 121, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 .skip {
   position: absolute;
   z-index: -999;
@@ -229,7 +210,6 @@ a:focus {
   width: 1px;
   height: 1px; }
 
-/* line 132, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_base.scss */
 .skip:focus,
 .skip:active {
   z-index: 999;
@@ -240,7 +220,6 @@ a:focus {
   height: auto;
   text-align: center; }
 
-/* line 3, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
 button {
   position: relative;
   top: 0;
@@ -259,16 +238,15 @@ button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
-  /* line 23, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
   button:hover {
     opacity: .8; }
 
-/* line 27, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
 input,
 button,
 textarea,
 select {
   overflow: visible;
+  height: 30px;
   height: 2.5rem;
   margin: 0;
   padding: 0;
@@ -284,13 +262,11 @@ select {
           appearance: none;
   text-fill-color: #fff; }
 
-/* line 49, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
 input,
 textarea,
 select {
   border: 1px solid currentColor; }
 
-/* line 54, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -299,7 +275,6 @@ select:-webkit-autofill {
   text-fill-color: currentColor;
   -webkit-text-fill-color: currentColor; }
 
-/* line 64, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_form.scss */
 button::-moz-focus-inner,
 input:-moz-focus-inner,
 select:-moz-focus-inner,
@@ -307,11 +282,9 @@ select:-moz-focus-inner,
   padding: 0;
   border: none; }
 
-/* line 12, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_bemErrorChecking.scss */
 [class*='--']:not([class*=' ']) {
   position: relative;
   outline: 1px solid red; }
-  /* line 16, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/components/_bemErrorChecking.scss */
   [class*='--']:not([class*=' ']):after {
     position: absolute;
     bottom: 100%;
@@ -322,92 +295,106 @@ select:-moz-focus-inner,
     color: red;
     background-color: white; }
 
-/* line 14, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 :root {
-  font-size: 14px; }
+  font-size: 12px; }
 
-@media (min-width: 768px) and (max-width: 1800px) {
-  /* line 17, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+@media (min-width: 768px) and (max-width: 1200px) {
   :root {
-    font-size: calc( 14px + (18 - 14) * ( (100vw - 768px) / ( 1800 - 768) )); } }
+    font-size: calc( 12px + 6 * ( (100vw - 768px) / 432 )); } }
 
-@media (min-width: 1800px) {
-  /* line 22, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
+@media (min-width: 1200px) {
   :root {
     font-size: 18px; } }
 
-/* line 37, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 body {
   max-width: 760px;
   margin: 0 auto;
+  padding: 11.25px;
   padding: .9375rem;
   font-family: 'Gotham', Helvetica, Arial, sans-serif;
-  font-size: .625rem;
+  font-size: inherit;
   font-weight: 400;
   font-style: normal;
-  line-height: .9375rem; }
+  line-height: 11.25px;
+  line-height: .9375rem;
+  line-height: 180%; }
 
-/* line 48, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h1 {
+  margin-top: 0px;
   margin-top: 0rem;
+  margin-bottom: 0px;
   margin-bottom: 0rem;
   font-family: inherit;
+  font-size: 18px;
   font-size: 1.5rem;
   font-weight: 600;
   font-style: inherit;
+  line-height: 22.5px;
   line-height: 1.875rem; }
 
-/* line 58, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h2 {
+  margin-top: 0px;
   margin-top: 0rem;
+  margin-bottom: 11.25px;
   margin-bottom: .9375rem;
   font-family: inherit;
+  font-size: 13.5px;
   font-size: 1.125rem;
   font-weight: 600;
   font-style: inherit;
+  line-height: 22.5px;
   line-height: 1.875rem; }
 
-/* line 68, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h3 {
+  margin-top: 0px;
   margin-top: 0rem;
+  margin-bottom: 0px;
   margin-bottom: 0rem;
   font-family: inherit;
+  font-size: 9.75px;
   font-size: .8125rem;
   font-weight: 600;
   font-style: inherit;
+  line-height: 11.25px;
   line-height: .9375rem; }
 
-/* line 78, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h4 {
+  margin-top: 0px;
   margin-top: 0rem;
+  margin-bottom: 0px;
   margin-bottom: 0rem;
   font-family: inherit;
+  font-size: 7.5px;
   font-size: .625rem;
   font-weight: 600;
   font-style: inherit;
+  line-height: 11.25px;
   line-height: .9375rem; }
 
-/* line 88, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 h5 {
+  margin-top: 0px;
   margin-top: 0rem;
+  margin-bottom: 0px;
   margin-bottom: 0rem;
   font-family: inherit;
+  font-size: 7.5px;
   font-size: .625rem;
   font-weight: 400;
   font-style: italic;
+  line-height: 11.25px;
   line-height: .9375rem; }
 
-/* line 98, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 p,
 ul,
 ol,
 pre,
 table,
 blockquote {
+  margin-top: 0px;
   margin-top: 0rem;
+  margin-bottom: 11.25px;
   margin-bottom: .9375rem; }
 
-/* line 107, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 ul ul,
 ol ol,
 ul ol,
@@ -415,12 +402,10 @@ ol ul {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 114, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 hr {
   margin: -1px 0;
   border: 1px solid; }
 
-/* line 119, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 b,
 strong,
 em,
@@ -428,13 +413,11 @@ small,
 code {
   line-height: 1; }
 
-/* line 126, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 sup {
   position: relative;
   top: -.5em;
   line-height: 0;
   vertical-align: baseline; }
 
-/* line 133, /Users/akukral/Sites/Site-Bootstrap/html/public/ui/_scss/modules/_Type.scss */
 sub {
   bottom: -.25em; }

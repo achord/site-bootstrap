@@ -2,17 +2,15 @@
 
 // Typographic styles and vertical rhythm pulled from http://www.gridlover.net/app/
 
-
 // These values are the minimum and maximum viewport sizes to apply the font scaling
 $min_width: 768;
-$max_width: 1800;
+$max_width: 1200;
 // These values represent the range of fon-tsize to apply
 // These values effect the base font-size, headings and other elements will scale proportionally
-$min_font: 14;
+$min_font: 12;
 $max_font: 18;
 
 :root { font-size: #{$min_font}px; }
-// This part is a little bit ugly, I will explain what is going on in a blog post soon.
 @media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
   :root {
     font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
@@ -40,10 +38,11 @@ body {
   padding: .9375rem;
 
   font-family: 'Gotham', Helvetica, Arial, sans-serif;
-  font-size: .625rem;
+  font-size: inherit;
   font-weight: 400;
   font-style: normal;
   line-height: .9375rem;
+  line-height: 180%;
 }
 h1 {
   margin-top: 0rem;

@@ -1,10 +1,12 @@
 'use strict'
 
-// import sayName from "./modules/alert";
-const sayName = (name='allan') => {
-  let greeting = `hello ${name}`
-  alert(greeting)
-}
+import {sayName, yellName} from "./modules/alert";
+// const sayName = (name='allan') => {
+//   let greeting = `hello ${name}`
+//   alert(greeting)
+// }
+
 
 sayName('allan');
-console.log('asdfds.asdfads')
+yellName('allan');
+// console.log('asd')
